@@ -1,5 +1,5 @@
 from calculator.gui import main
-import flet
+import flet as ft
 
 if __name__ == "__main__":
-    flet.app(target=main)
+    ft.app(target=main,view=ft.WEB_BROWSER)

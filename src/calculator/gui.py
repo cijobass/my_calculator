@@ -63,9 +63,10 @@ def main(page: ft.Page):
         row = ft.Row()
         for item in row_buttons:
             if isinstance(item, dict):  # ボタン情報が辞書型の場合、色付きボタン
-                btn = ft.ElevatedButton(text=item['text'], on_click=on_button_click, width=75, height=75, color=item['text_color'], bgcolor=item['color'])
+                btn = ft.ElevatedButton(text=item['text'], on_click=on_button_click, width=75, height=75, 
+                                        color=item['text_color'], bgcolor=item['color'],expand=True)
             else:
-                btn = ft.ElevatedButton(text=item, on_click=on_button_click, width=75, height=75)
+                btn = ft.ElevatedButton(text=item, on_click=on_button_click, width=75, height=75,expand=True)
             row.controls.append(btn)
         page.add(row)
 
