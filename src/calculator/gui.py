@@ -3,7 +3,7 @@ from calculator.functions import evaluate_expression
 import pyperclip as pc
 
 def main(page: ft.Page):
-    page.title = "Advanced Calculator"
+    page.title = "Calculator"
     page.window_width = 620
     page.window_height = 700
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
