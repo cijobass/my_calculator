@@ -15,9 +15,6 @@ def evaluate_expression(expr):
                 'log': lambda x: sympy.log(x, 10)  # Common logarithm (base 10)
             }
         )
-        if isinstance(evaluated_expr, sympy.Integer):
-            return str(int(evaluated_expr))
-        else:
-            return str(float(evaluated_expr))
+        return str(float(evaluated_expr))
     except Exception as exc:
         return "Error: " + str(exc)
